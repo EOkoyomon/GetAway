@@ -83,14 +83,7 @@
 
             <div class="col-md-4">
                 <h3 id="placeName">Maui</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae. Sed dui lorem, adipiscing in adipiscing et, interdum nec metus. Mauris ultricies, justo eu convallis placerat, felis enim.</p>
-                <h3>Best rate</h3>
-                <ul>
-                    <li>Lorem Ipsum</li>
-                    <li>Dolor Sit Amet</li>
-                    <li>Consectetur</li>
-                    <li>Adipiscing Elit</li>
-                </ul>
+                <h3>Best rate: <span id="bestRate">$50</span></h3>
             </div>
 
         </div>
@@ -156,6 +149,11 @@
               zoom: 1
             });
         document.getElementById("placeName").innerHTML = "Maui";
+        $("#bestRate").text("Loading...");
+        $.ajax( "maui.php" )
+          .done(function(msg) {
+            $("#bestRate").text("$" + msg);
+          });
       }
 
       function paris() {
@@ -167,6 +165,11 @@
               zoom: 1
             });
         document.getElementById("placeName").innerHTML = "Paris, France";
+        $("#bestRate").text("Loading...");
+        $.ajax( "paris.php" )
+          .done(function(msg) {
+            $("#bestRate").text("$" + msg);
+          });
       }
 
       function newyork() {
@@ -177,6 +180,11 @@
               pov: {heading: 165, pitch: 0},
               zoom: 1
             });
+        $("#bestRate").text("Loading...");
+        $.ajax( "newyork.php" )
+          .done(function(msg) {
+            $("#bestRate").text("$" + msg);
+          });
         document.getElementById("placeName").innerHTML = "New York City, NY";
       }
     </script>
