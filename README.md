@@ -4,7 +4,7 @@ A virtual reality application that simulates the user's destination, showing the
 
 ====================================================================================
 
-Cheapest flight and image APIs on Bluemix: http://python-hello-world-flask-jzbao-348.mybluemix.net/
+Internal cheapest flight and image APIs, hosted on Bluemix: http://python-hello-world-flask-jzbao-348.mybluemix.net/
 
 /get-cheapest-fare
 
@@ -13,6 +13,8 @@ GET parameters: origin (SFO), destination (JFK, OGG, CDG), and departure_date (Y
 /get-image
 
 GET parameters: location (New York, Maui, Paris)
+
+Link to Git repo for internal API: https://github.com/JasonBaoZ/getawayapp
 
 ====================================================================================
 
