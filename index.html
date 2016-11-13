@@ -181,7 +181,7 @@
               zoom: 1
             });
         $("#bestRate").text("Loading...");
-        $.ajax( "newyork.php" )
+        $.ajax( "new-york.php" )
           .done(function(msg) {
             $("#bestRate").text("$" + msg);
           });
