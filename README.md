@@ -6,8 +6,6 @@ A virtual reality application that simulates the user's destination, showing the
 
 Cheapest flight and image APIs on Bluemix: http://python-hello-world-flask-jzbao-348.mybluemix.net/
 
-Endpoints:
-
 /get-cheapest-fare
 
 GET parameters: origin (SFO), destination (JFK, OGG, CDG), and departure_date (YYYY-MM-DD)
